@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/img_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                tools:src="@color/cardview_dark_background" />
+
+            <!-- TextView Nama Produk-->
+            <TextView
+                android:id="@+id/txt_nama_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/img_card"
+                android:layout_marginTop="11dp"
+                tools:text="Nama Produk"/>
+
+            <!-- TextView Kode -->
+            <TextView
+                android:id="@+id/txt_kode_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txt_nama_produk"
+                android:layout_centerVertical="true"
+                tools:text="Kode Produk"/>
+
+            <!-- TextView Harga -->
+            <TextView
+                android:id="@+id/txt_harga_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txt_kode_produk"
+                tools:text="Harga Produk"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
